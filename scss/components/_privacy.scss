@@ -1,0 +1,96 @@
+.privacy__label {
+    position: relative;
+    margin-left: 38px;
+    &::before {
+            cursor: pointer;
+                display: inline-block;
+                content: "";
+                width: 16px;
+                height: 15px;
+                margin-right: 7px;
+                border: 1px solid var(--secondary-color);
+                border-radius: 2px;
+                position: absolute;
+                left: -25px;
+                top: 1px;
+    }
+}
+
+.privacy__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    outline: none;
+}
+
+.privacy {
+    font-size: 14px;
+    line-height: 1.7142;
+    letter-spacing: 0.03em;
+    margin-top: 20px;
+    color: var(--secondary-color);
+}
+
+
+.privacy__input:checked+label::before {
+    background-color: var(--brand-color);
+    background-image: url(../img/features-img/check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid var(--brand-color);
+}
+
+
+.privacy__input:focus+label::before {
+    background-image: url(../img/features-img/check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid var(--brand-color);
+    outline: 1px solid var(--primary-color);
+}
+
+.privacy__input:checked:focus+label::before {
+    background-image: url(../img/features-img/check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid var(--brand-color);
+    outline: 1px solid var(--primary-color);
+
+}
+
+.privacy__label {
+  
+    display: inline-block;
+}
+
+.privacy__btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    padding: 10px 56px;
+    margin: 0 auto;
+    color: var(--light-color);
+    background-color: var(--brand-color);
+    border-radius: 4px;
+    border-style: none;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    justify-content: center;
+    border: none;
+    text-decoration: none;
+}
+
+
+
+.privacy__link {
+    text-decoration: underline;
+    color: var(--brand-color);
+}

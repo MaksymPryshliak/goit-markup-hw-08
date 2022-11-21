@@ -1,0 +1,20 @@
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    gap: 10px;
+}
+
+.social__link--team {
+    border-radius: 100px;
+    padding: 12px;
+    display: block;
+    color: #AFB1B8;
+    &:hover, &:focus {
+    background-color: var(--brand-color);
+        color: var(--light-color);
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+    }
+}

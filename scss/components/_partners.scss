@@ -1,0 +1,51 @@
+.partners-item {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    flex-wrap: wrap;
+    }
+
+
+//   .our-team {
+//     display: none;
+//   }
+
+.partner-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-color);
+    margin-bottom: 50px;
+
+}
+
+
+.partners-link {
+    width: 210px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: #AFB1B8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover, &:focus {
+    border: 1px solid var(--brand-color);
+        color: var(--brand-color);
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+    }
+
+    @media screen and (min-width: 768px){
+        width: 226px;
+        
+    }
+
+         @media screen and (min-width: 1200px) {
+             width: 170px;
+    
+         }
+}
