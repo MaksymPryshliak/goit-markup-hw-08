@@ -1652,6 +1652,15 @@ address a {
   margin-left: 10px;
 }
 
+.footer-submit {
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .footer-submit {
+    width: auto;
+  }
+}
+
 .portfolio_cards {
   min-height: 1360px;
   /* padding: 94px 0; */
