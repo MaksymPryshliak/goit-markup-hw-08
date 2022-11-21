@@ -572,6 +572,12 @@ ul {
   background-size: cover;
   max-width: 1600px;
   margin: 0 auto;
+  padding: 200px 0;
+}
+@media screen and (max-width: 1200px) {
+  .uppersite {
+    padding: 118px 0;
+  }
 }
 @media (min-device-pixel-ratio: 2) and (max-width: 768px), (-webkit-min-device-pixel-ratio: 2) and (max-width: 768px), (min-resolution: 192dpi) and (max-width: 768px), (min-resolution: 2dppx) and (max-width: 768px) {
   .uppersite {
@@ -844,7 +850,14 @@ ul {
 }
 
 .privacy__label {
+  margin-left: 25px;
   display: inline-block;
+  font-size: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .privacy__label {
+    font-size: 14px;
+  }
 }
 
 .privacy__btn {
@@ -881,6 +894,12 @@ ul {
 .privacy__link {
   text-decoration: underline;
   color: var(--brand-color);
+  font-size: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .privacy__link {
+    font-size: 14px;
+  }
 }
 
 .menu-toggle {

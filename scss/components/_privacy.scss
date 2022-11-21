@@ -62,8 +62,12 @@
 }
 
 .privacy__label {
-  
+    margin-left: 25px;
     display: inline-block;
+    font-size: 12px;
+    @media screen and (min-width: 1200px) {
+            font-size: 14px
+        }
 }
 
 .privacy__btn {
@@ -94,4 +98,8 @@
 .privacy__link {
     text-decoration: underline;
     color: var(--brand-color);
+    font-size: 12px;
+    @media screen and (min-width: 1200px) {
+        font-size: 14px
+        }
 }
