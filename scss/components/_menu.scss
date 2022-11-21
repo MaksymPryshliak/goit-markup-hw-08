@@ -14,17 +14,18 @@
     outline: none;
 
     &:hover {
-        fill: var(--accent-color);
+        fill: var(--brand-color);
     }
 
     &:focus {
-        fill: var(--accent-color);
+        fill: var(--brand-color);
     }
 
     @media (min-width: 768px) {
         display: none;
     }
 }
+
 
 .menu-container {
     position: fixed;
@@ -48,4 +49,108 @@
 .menu-container.is-open {
     transform: translateX(0);
 
+}
+
+.mobile-nav {
+
+    &__list {
+        color: var(--basic-color);
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.175;
+        letter-spacing: 0.02em;
+
+        display: block;
+
+
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    &__link--current {
+        color: var(--brand-color);
+    }
+}
+
+.mobile-contact {
+    &__list {
+        margin-bottom: 64px;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}
+
+.mobile-social {
+
+    &__list {
+        display: flex;
+
+
+        color: var(--brand-color);
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+
+        letter-spacing: 0.02em;
+    }
+
+    &__link {
+        color: var(--brand-color);
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+
+        letter-spacing: 0.02em;
+        padding: 0 10px;
+    }
+
+    &__item:not(:last-child) {
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        ;
+    }
+
+}
+
+.mobile-tel__link {
+    color: var(--brand-color);
+
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.1764;
+    letter-spacing: 0.02em;
+
+
+}
+
+.mobile-mail__link {
+    color: var(--title-text-color);
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.1666;
+    letter-spacing: 0.02em;
+
+}
+
+.button-burger {
+    background-color: transparent;
+    border: 0;
+    margin: 10px 15px;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+
+    }
+}
+
+.button-close-burger {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: transparent;
+    border: 0;
 }
