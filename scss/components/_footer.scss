@@ -25,7 +25,9 @@ footer a {
     flex-wrap: wrap;
     gap: 60px 185px;
     justify-content: space-around;
-
+    @media screen and (min-width: 1200px) {
+            gap: 0;
+        }
 }
 
 .footer-logo span {
@@ -43,6 +45,8 @@ address a {
             }
         
 }
+
+
 
 .address {
     font-style: normal;
@@ -82,7 +86,10 @@ address a {
     text-transform: uppercase;
     margin-left: 5px;
     color: var(--light-color);
-  text-align: center;
+    text-align: center;
+        @media screen and (min-width: 1200px) {
+               text-align: left;
+            }
 }
 
 
@@ -144,11 +151,6 @@ address a {
         }
 }
 
-.footer-submit__label{
-    margin: 0 auto;
-        width: 100%;
-}
-
 .footer-submit__input {
     padding: 13px 16px;
     background-color: var(--dark-background);
@@ -166,7 +168,9 @@ address a {
     flex-direction: column;
     gap: 20px;
     justify-content: center;
-
+@media screen and (min-width: 1200px) {
+        flex-direction: row;
+    }
 }
 
 

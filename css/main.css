@@ -1402,6 +1402,11 @@ footer a {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
+@media screen and (min-width: 1200px) {
+  .footer {
+    gap: 0;
+  }
+}
 
 .footer-logo span {
   color: var(--brand-color);
@@ -1463,6 +1468,11 @@ address a {
   margin-left: 5px;
   color: var(--light-color);
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-header {
+    text-align: left;
+  }
 }
 
 .footer-media {
@@ -1546,11 +1556,6 @@ address a {
   }
 }
 
-.footer-submit__label {
-  margin: 0 auto;
-  width: 100%;
-}
-
 .footer-submit__input {
   padding: 13px 16px;
   background-color: var(--dark-background);
@@ -1578,6 +1583,14 @@ address a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-submit__form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .footer-submit__btn {
