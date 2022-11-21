@@ -1,12 +1,24 @@
 .site_header {
-    color: var(--light-color);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 136%;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-}
+        margin-top: 0;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 360px;
+        color: #FFFFFF;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.6153;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        @media screen and(min-width: 1200px) {
+            font-size: 44px;
+            line-height: 1.36;
+            max-width: 670px;
+
+        }
+    }
+
 
 .frst_btn {
     display: block;
