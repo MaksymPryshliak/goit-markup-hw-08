@@ -1654,7 +1654,12 @@ address a {
 .footer-submit {
   width: 100%;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
+  .footer-submit {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .footer-submit {
     width: auto;
   }
