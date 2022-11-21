@@ -311,7 +311,6 @@ header .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 1200px;
 }
 
 a {
@@ -407,6 +406,7 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    gap: 30px;
   }
 }
 
