@@ -99,9 +99,16 @@ address a {
     align-items: center;
      @media screen and (min-width: 1200px) {
         align-items: baseline;
+        margin-right: 70px;
             }
     }
 
+
+.footer-social {
+    @media screen and (min-width: 1200px) {
+            margin-right: 93px;
+        }
+}
 
 .footer-social__link {
     display: flex;
